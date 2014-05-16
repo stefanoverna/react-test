@@ -1,0 +1,12 @@
+{
+  "name": "react",
+  "version": "0.0.0",
+  "dependencies": {
+    "requirejs": "latest",
+    "react": "latest",
+    "jquery": "latest",
+    "lodash-amd": "latest",
+    "backbone-amd": "latest"
+  }
+}
+
