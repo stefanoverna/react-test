@@ -9,6 +9,6 @@ define ['react', 'components/canvas'], (React, Canvas) ->
     render: ->
       Canvas(null,
         React.DOM.input(ref: 'input', onChange: @update),
-        React.DOM.p(null, "Ciao #{@state.name}!")
+        React.DOM.p(ref: 'text', "Ciao #{@state.name}!")
       )
 

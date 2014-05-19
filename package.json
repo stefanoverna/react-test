@@ -1,0 +1,8 @@
+{
+  "name": "react-demo",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-coffee": "*"
+  }
+}
+

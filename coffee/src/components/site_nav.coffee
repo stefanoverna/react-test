@@ -1,4 +1,4 @@
-define ['react', 'react-router-component'], (React, Router) ->
+define ['react', 'react-router'], (React, Router) ->
   React.createClass
     displayName: 'SiteNav'
 

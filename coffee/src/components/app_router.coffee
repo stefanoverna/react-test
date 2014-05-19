@@ -1,4 +1,4 @@
-define ['react', 'react-router-component', 'components/home_page', 'components/about_page'], (React, Router, HomePage, AboutPage) ->
+define ['react', 'react-router', 'components/home_page', 'components/about_page'], (React, Router, HomePage, AboutPage) ->
 
   React.createClass
     displayName: 'AppRouter'

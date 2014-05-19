@@ -1,16 +1,23 @@
 var gulp = require('gulp');
 var coffee = require('gulp-coffee');
 
-var htmlSrc = 'src/**/*.html';
+var htmlSrc = 'public/**/*.html';
 var htmlDest = 'build';
 
-var coffeeSrc = 'src/js/**/*.coffee';
+var coffeeSrc = 'coffee/**/*.coffee';
 var coffeeDest = 'build/js';
+
+function handleError(err) {
+  console.log(err.toString());
+  this.emit('end');
+}
 
 gulp.task('js', function() {
   return gulp.src(coffeeSrc)
     .pipe(coffee())
-    .pipe(gulp.dest(coffeeDest));
+    .on("error", handleError)
+    .pipe(gulp.dest(coffeeDest))
+    ;
 });
 
 gulp.task('html', function() {
