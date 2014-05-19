@@ -6,7 +6,9 @@
     "react": "latest",
     "jquery": "latest",
     "lodash-amd": "latest",
-    "backbone-amd": "latest"
+    "backbone-amd": "latest",
+    "react-dom": "latest",
+    "react-router-component": "latest"
   }
 }
 
